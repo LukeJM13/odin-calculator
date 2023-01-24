@@ -54,6 +54,7 @@ function btnEquals() {
         document.getElementById('calcOp').textContent = `${num1} =`;
     } else {
         num2 = num;
+        num = "";
         if (operator === "+") {
             document.getElementById('calcText').textContent = parseFloat(num1) + parseFloat(num2);
         } else if (operator === "-") {
