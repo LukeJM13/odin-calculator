@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="body">
         <div class="calculator">
             <div class="screen">
-                <h2 class="calcText">Sample Numbers</h2>
+                <p id="calcOp"></p>
+                <p id="calcText"></p>
             </div>
             <button type="button" class="calcButton" value="1" onclick="btnClick(value)">1</button>
             <button type="button" class="calcButton" value="2" onclick="btnClick(value)">2</button>
@@ -24,8 +25,12 @@
             <button type="button" class="calcButton" value="8" onclick="btnClick(value)">8</button>
             <button type="button" class="calcButton" value="9" onclick="btnClick(value)">9</button>
             <button type="button" class="calcButton" value="0" onclick="btnClick(value)">0</button>
-            <button type="button" class="calcButton" id="equalsButton" value="=" onclick="btnClick(value)">=</button>
-            <button type="button" class="calcButton" id="clearButton" value="clear" onclick="btnClick(value)">Clear</button>
+            <button type="button" class="calcButton" value="+" onclick="btnOperator(value)">+</button>
+            <button type="button" class="calcButton" value="-" onclick="btnOperator(value)">-</button>
+            <button type="button" class="calcButton" value="*" onclick="btnOperator(value)">*</button>
+            <button type="button" class="calcButton" value="/" onclick="btnOperator(value)">/</button>
+            <button type="button" class="calcButton" id="equalsButton" value="=" onclick="btnEquals(value)">=</button>
+            <button type="button" class="calcButton" id="clearButton" value="clear" onclick="btnClear(value)">Clear</button>
         </div>
     </div>
 </body>

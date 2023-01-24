@@ -13,18 +13,18 @@
     border-width: 1px;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: flex;
+    font-size: 19px;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#equalsButton {
-    grid-column-start: 2;
-    grid-column-end: 4;
+.calcButton {
+   font-size: 20px;
 }
 
 #clearButton {
     grid-column-start: 1;
     grid-column-end: 4;
-}
-
-.calcButton {
-   font-size: 20px;
 }
