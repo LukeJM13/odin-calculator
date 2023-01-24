@@ -49,6 +49,9 @@ function btnOperator(a) {
 function btnEquals() {
     if (operator === "") {
         document.getElementById('calcText').textContent = num;
+    } else if (num === "") {
+        document.getElementById('calcText').textContent = num1;
+        document.getElementById('calcOp').textContent = `${num1} =`;
     } else {
         num2 = num;
         if (operator === "+") {
@@ -60,6 +63,6 @@ function btnEquals() {
         } else if (operator === "/") {
             document.getElementById('calcText').textContent = parseFloat(num1) / parseFloat(num2);
         }
-        document.getElementById('calcOp').textContent = `${num1} ${operator} ${num2}`;
+        document.getElementById('calcOp').textContent = `${num1} ${operator} ${num2} =`;
     }
 }
